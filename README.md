@@ -2,7 +2,7 @@
 
 A comprehensive, project-based journey to mastering modern backend architecture. This repository tracks my progress through the core internals, database design, and scalable system patterns of the **Java** and **Node.js** ecosystems.
 
-> **Central Dashboard:** [View my Full Roadmap & Tasks on Notion](https://www.notion.so/Projects-Tasks-1e45de37c6ed808a8fe4f83206ed271c)
+> **Central Dashboard:** [View my Full Roadmap & Tasks on Notion](https://www.notion.so/Projects-Tasks)
 
 ---
 
