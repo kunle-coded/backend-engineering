@@ -20,3 +20,11 @@
 - **The Problem**: No `app.use((err, req, res, next) => ...)` in vanilla Node.js.
 - **The Catch**: Middlewares are just functions. In vanilla, I am the "Error Manager." I have to manually write the `res.writeHead(500)` or the server will just hang and the client will wait forever.
 - **The Lesson**: Always wrap `async` logic in `try/catch` and remember to close the response (`res.end()`) even when an error occurs.
+
+## 2. PostgreSQL
+
+### 2.0 Postgres Connection Mystery
+
+- **The Problem**: Running psql -f setup.sql failed with FATAL: database "backend_traning" does not exist, even though I was sure it existed.
+- **The Catch**: I had a typo inside the SQL script (\c backend_traning) that was overriding my terminal command.
+- **The Lesson**: Always check the internal "meta-commands" (\c, \i) in a script first. Errors in the terminal often point to the line number inside the file.
