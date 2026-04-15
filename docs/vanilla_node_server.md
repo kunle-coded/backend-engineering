@@ -52,7 +52,7 @@ This was my biggest "Aha!" moment. Unlike Express (res.body), in Vanilla Node, t
 - **The Catch**: In Express, I can just call `next(err)` and it will automatically go to the error-handling middleware. In Vanilla Node, I have to manually send a response with `res.writeHead(500)` and `res.end()` inside the catch block.
 - **The Lesson**: Always wrap your logic in `try/catch` and remember to close the response (`res.end()`) even when an error occurs. Otherwise, the client will wait forever and eventually time out.
 
-## 5. My Vanilla Node "Rules of Thumb"
+## 6. My Vanilla Node "Rules of Thumb"
 
 | Feature      | How I handle it in Vanilla                             |
 | ------------ | ------------------------------------------------------ |
